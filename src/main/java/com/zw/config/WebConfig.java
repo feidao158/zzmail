@@ -1,8 +1,10 @@
 package com.zw.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.thymeleaf.spring4.SpringTemplateEngine;
@@ -14,6 +16,7 @@ import org.thymeleaf.spring4.view.ThymeleafViewResolver;
  */
 @Configuration
 @EnableWebMvc
+@ComponentScan(basePackages = "com.zw.controller")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     /**
@@ -59,4 +62,13 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         return thymeleafViewResolver;
     }
 
+    /**
+     * 放行静态资源
+     * 当DisptacherServlet接收到了他匹配的请求，但是找不到相应的Controller，就会把这个请求返回给默认的处理（比如交给tomcat处理）
+     * @param configurer
+     */
+    @Override
+    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+        configurer.enable();
+    }
 }
