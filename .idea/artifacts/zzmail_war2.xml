@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="zzmail:war2">
+    <output-path>$PROJECT_DIR$/out/artifacts/zzmail_war2</output-path>
+    <root id="archive" name="zzmail_war.war">
+      <element id="artifact" artifact-name="zzmail:war exploded" />
+    </root>
+  </artifact>
+</component>

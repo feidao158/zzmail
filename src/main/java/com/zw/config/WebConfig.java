@@ -28,7 +28,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     {
         SpringResourceTemplateResolver springResourceTemplateResolver = new SpringResourceTemplateResolver();
         springResourceTemplateResolver.setCharacterEncoding("UTF-8");
-        springResourceTemplateResolver.setPrefix("static");
+
         springResourceTemplateResolver.setSuffix(".html");
         springResourceTemplateResolver.setCacheable(false);
         return springResourceTemplateResolver;
