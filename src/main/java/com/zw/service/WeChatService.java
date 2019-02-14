@@ -16,6 +16,8 @@ public class WeChatService {
     @Autowired
     InsInfoMapper insInfoMapper;
 
+    WeChatService weChatService;
+
 
     public String getAcckessToken()
     {
@@ -38,7 +40,14 @@ public class WeChatService {
     public int resoloverIns(String fromUser,String url)
     {
         String insPicUrl = WeChatUtils.getInsPicUrl(url);
-
+        System.out.println(fromUser + insPicUrl);
         return   insInfoMapper.insertData(fromUser,insPicUrl);
+    }
+
+
+    public String getInsPicUrl(String fromUser)
+    {
+
+        return insInfoMapper.selectUrl(fromUser);
     }
 }

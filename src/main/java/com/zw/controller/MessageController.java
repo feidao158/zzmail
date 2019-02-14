@@ -10,18 +10,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-
 @Controller
 public class MessageController {
     @Autowired
     XStream xStream;
     @Autowired
     WeChatService weChatService;
-    @Autowired
-    ResolveIns resolveIns;
-
-
     /**
      * 验证是否为微信传来的消息
      * @param serverInfo
@@ -52,9 +46,6 @@ public class MessageController {
     {
         System.out.println(textMessage.getMsgType());
 //        System.out.println(textMessage);
-
-
-
         ReplyTextMessage replyTextMessage = new ReplyTextMessage();
         replyTextMessage.setFromUserName(textMessage.getToUserName());
         replyTextMessage.setToUserName(textMessage.getFromUserName());
@@ -66,7 +57,6 @@ public class MessageController {
         if (textMessage.getContent().equals("懒羊羊"))
         {
             replyTextMessage.setContent("什么沙雕玩意");
-
 
         }else if (textMessage.getContent().equals("图文消息")) {
 //            replyTextMessage.setMsgType(WeChatMessage.MSG_TYPE_NEWS);
@@ -84,29 +74,30 @@ public class MessageController {
             news1.setPicUrl("http://i0.hdslb.com/bfs/article/9e991e8f10346809295a3b7507f7db22522162fe.jpg");
             news1.setUrl("http://dnf.qq.com");
             list.add(news1);
-//            News news2 = new News();
-//            news2.setTitle("震惊！懒羊羊一个在家竟然干这个");
-//            news2.setDescription("描述1");
-//            news2.setPicUrl("http://img5.imgtn.bdimg.com/it/u=3764617837,1933060640&fm=200&gp=0.jpg");
-//
-//            list.add(news2);
+
             replyPicTextMessage.setArticles(list);
             return converToXml(replyPicTextMessage);
-        }else if(textMessage.getContent().contains("https://www.instagram.com"))
+        }else if(textMessage.getContent().equals("ins"))
         {
-//                return WeChatUtils.getInsPicUrl(textMessage.getContent());
+            String insPicUrl = weChatService.getInsPicUrl(textMessage.getFromUserName());
+            replyTextMessage.setContent(insPicUrl);
+        }
+
+
+
+        else if(textMessage.getContent().contains("https://www.instagram.com"))
+        {
+//
             System.out.println("我执行了");
             System.out.println(textMessage.getFromUserName());
-            new ResolveIns(textMessage.getFromUserName(),textMessage.getContent()).start();
+            new ResolveIns(textMessage.getFromUserName(),textMessage.getContent(),weChatService).start();
             replyTextMessage.setContent("正在解析url，请等待5秒后回复ins查看！");
-
 
         } else {
             replyTextMessage.setContent(textMessage.getContent());
         }
             return converToXml(replyTextMessage);
     }
-
     /**
      * 微信公众号被动回复消息需要XML格式 这里使用一个工具转换为xml格式
      * @param replyTextMessage

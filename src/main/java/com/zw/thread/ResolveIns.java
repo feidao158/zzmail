@@ -4,7 +4,7 @@ import com.zw.service.WeChatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class ResolveIns  extends Thread
 {
     String url;
@@ -18,10 +18,11 @@ public class ResolveIns  extends Thread
        weChatService.resoloverIns(this.fromUser,this.url);
     }
 
-    public ResolveIns(String fromUser,String url)
+    public ResolveIns(String fromUser,String url,WeChatService weChatService)
     {
         this.url = url;
         this.fromUser = fromUser;
+        this.weChatService = weChatService;
 
     }
     public ResolveIns()
