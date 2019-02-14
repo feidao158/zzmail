@@ -10,25 +10,8 @@
       <change afterPath="$PROJECT_DIR$/../manager/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../manager/src/main/java/com/zw/pojo/ClassSchedule.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../manager/src/main/resources/spring-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zw/pojo/ReplyPicTextMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../huawei/src/main/java/com/zw/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../huawei/src/main/java/com/zw/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zw/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zw/controller/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zw/pojo/BaseReplyMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zw/pojo/BaseReplyMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zw/pojo/PicTextReplyMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zw/pojo/ReplyTextMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zw/pojo/ReplyTextMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zw/utils/WeChatUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zw/utils/WeChatUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zw/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zw/controller/MessageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zw/pojo/BaseReplyMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zw/pojo/BaseReplyMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zw/pojo/PicTextReplyMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zw/pojo/ReplyTextMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zw/pojo/ReplyTextMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zw/utils/WeChatUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zw/utils/WeChatUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/zzmail/WEB-INF/classes/com/zw/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/zzmail/WEB-INF/classes/com/zw/controller/MessageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/zzmail/WEB-INF/classes/com/zw/pojo/BaseReplyMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/zzmail/WEB-INF/classes/com/zw/pojo/BaseReplyMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/zzmail/WEB-INF/classes/com/zw/pojo/ReplyTextMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/zzmail/WEB-INF/classes/com/zw/pojo/ReplyTextMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/zzmail/WEB-INF/classes/com/zw/utils/WeChatUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/zzmail/WEB-INF/classes/com/zw/utils/WeChatUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zzmail.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zzmail.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -126,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zw/utils/WeChatUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+            <state relative-caret-position="108">
+              <caret line="57" column="7" lean-forward="true" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zw/utils/WeChatUtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="108">
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               <folding>
                 <element signature="e#98#99#0" expanded="true" />
                 <element signature="e#142#143#0" expanded="true" />
@@ -151,8 +134,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+            <state relative-caret-position="360">
+              <caret line="66" column="16" lean-forward="true" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -242,7 +225,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1533" />
@@ -329,32 +312,6 @@
               <item name="zzmail" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="zzmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-codec:commons-codec:1.11" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="zzmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-codec:commons-codec:1.11" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-codec-1.11.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-codec:commons-codec:1.11" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-codec-1.11.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="codec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-codec:commons-codec:1.11" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-codec-1.11.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="codec" type="462c0819:PsiDirectoryNode" />
-              <item name="digest" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -366,7 +323,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550106894683" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550107112688" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -532,12 +489,12 @@
       <workItem from="1549940613614" duration="3347000" />
       <workItem from="1549946433713" duration="13475000" />
       <workItem from="1550020719598" duration="21652000" />
-      <workItem from="1550105879509" duration="850000" />
+      <workItem from="1550105879509" duration="1218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43993000" />
+    <option name="totallyTimeSpent" value="44361000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1093,20 +1050,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zw/utils/WeChatUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zw/utils/WeChatUtilsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="108">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding>
             <element signature="e#98#99#0" expanded="true" />
             <element signature="e#142#143#0" expanded="true" />
@@ -1114,10 +1061,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zw/utils/WeChatUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="57" column="7" lean-forward="true" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+        <state relative-caret-position="360">
+          <caret line="66" column="16" lean-forward="true" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
         </state>
       </provider>
     </entry>
