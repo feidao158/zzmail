@@ -1,12 +1,12 @@
 package com.zw.controller;
 import com.thoughtworks.xstream.XStream;
 import com.zw.pojo.*;
+import com.zw.service.WeChatService;
+import com.zw.thread.ResolveIns;
 import com.zw.utils.WeChatUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -16,6 +16,10 @@ import java.util.List;
 public class MessageController {
     @Autowired
     XStream xStream;
+    @Autowired
+    WeChatService weChatService;
+    @Autowired
+    ResolveIns resolveIns;
 
 
     /**
@@ -48,6 +52,8 @@ public class MessageController {
     {
         System.out.println(textMessage.getMsgType());
 //        System.out.println(textMessage);
+
+
 
         ReplyTextMessage replyTextMessage = new ReplyTextMessage();
         replyTextMessage.setFromUserName(textMessage.getToUserName());
@@ -82,12 +88,17 @@ public class MessageController {
 //            news2.setTitle("震惊！懒羊羊一个在家竟然干这个");
 //            news2.setDescription("描述1");
 //            news2.setPicUrl("http://img5.imgtn.bdimg.com/it/u=3764617837,1933060640&fm=200&gp=0.jpg");
-//            news2.setUrl("http://www.4444kk.com");
+//
 //            list.add(news2);
             replyPicTextMessage.setArticles(list);
             return converToXml(replyPicTextMessage);
-        }else if(textMessage.getContent().equals("图片"))
+        }else if(textMessage.getContent().contains("https://www.instagram.com"))
         {
+//                return WeChatUtils.getInsPicUrl(textMessage.getContent());
+            System.out.println("我执行了");
+            System.out.println(textMessage.getFromUserName());
+            new ResolveIns(textMessage.getFromUserName(),textMessage.getContent()).start();
+            replyTextMessage.setContent("正在解析url，请等待5秒后回复ins查看！");
 
 
         } else {
@@ -97,7 +108,7 @@ public class MessageController {
     }
 
     /**
-     * 微信小程序被动回复消息需要XML格式 这里使用一个工具转换为xml格式
+     * 微信公众号被动回复消息需要XML格式 这里使用一个工具转换为xml格式
      * @param replyTextMessage
      * @return
      */
